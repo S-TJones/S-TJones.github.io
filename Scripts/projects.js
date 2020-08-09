@@ -1,20 +1,20 @@
 
 // Array of current projects
-const projects = [{ id: 1, project: "project-1",
+const projects = [{ id: 1, name: "project-1",
                     'project-img': "/Photos/...",
                     overview: "Lorem ipsum..."}, 
-                  { id: 2, project: "project-2",
+                  { id: 2, name: "project-2",
                     'project-img': "/Photos/...",
                     overview: "Lorem ipsum..."}, 
-                  { id: 3, project: "project-3,
+                  { id: 3, name: "project-3,
                     'project-img': "/Photos/...",
                     overview: "Lorem ipsum..."}, 
-                  { id: 4, project: "project-4",
+                  { id: 4, name: "project-4",
                     'project-img': "/Photos/...",
                     overview: "Lorem ipsum..."}];
                     
 // Get all the ID's
-const project = document.getElementById("project");
+const project = document.getElementById("project-title");
 const img = document.getElementById("project-img");
 const summary = document.getElementById("overview");
 
@@ -28,7 +28,7 @@ let current_project = 0;
 window.addEventListener("DOMContentLoaded", function() {
     const obj = projects[current_project];
     
-    project.textContent = obj.project;
+    project.textContent = obj.name;
     img.src = obj.'project-img'
     summary.textContent = obj.overview;
 });
