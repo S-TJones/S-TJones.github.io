@@ -1,104 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css" type="text/css">
-
-    <title> My Résumé </title>
-</head>
-<body>
-    <div id="background-style"><!--Contains clip path--></div>
-    <header id="header">
-        <div class="header-border">
-            <h1>Shemar Jones</h1>
-            <p class="header-p">Student/ Web Developer</p>
-        </div>
+    <title>S~Jones</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/238a67abd4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="#" id="logo">
+          <h2 id="title">S~Jones</h2>
+        </a>
+      </div>
+      <nav>
+        <ul id="nav-bar">
+          <li>
+            <a href="" class="header-links">HOME</a>
+          </li>
+          <li>
+            <a href="" class="header-links">[ ]</a>
+          </li>
+          <li>
+            <a href="" class="header-links">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <aside id="aside">
-        <div class="aside-div"><img class="photo-me" src="Photos/Me" alt="Photo of Shemar Jones"></div>
-        <div class="aside-div bottom-border">
-            <h2>Contact</h5>
-            <p class="aside-p"><img class="photo-icons" src="Photos/Telephone-logo.png" alt="Image of Telephone"><span>(876) 793-9957</span></p>
-            <p class="aside-p"><img class="photo-icons" src="Photos/Email-logo.png" alt="Image of Envelope"><span>jones.shemar.sj@gmail.com</span></p>
+
+    <main id="all-content">
+      <section id="load-screen">
+        <i class="fas fa-spinner"></i>
+        <h2>Work in Progress...</h2>
+      </section>
+      <section id="main-content">
+        <div id="about">
+          <h1>Shemar Jones</h1>
+          <h3>Student | Web & Mobile App Developer</h3>
+          <p>Short description of yourself...</p>
         </div>
-        <div class="aside-div">
-            <h2>Social Media</h5>
-            <p class="aside-p"><img class="photo-icons" src="Photos/linkedin-logo.png" alt="LinkedIn logo"><span><a href="https://www.linkedin.com/in/shemar-j/">LinkedIn.com/shemar-j/</a></span></p>
+
+        <div id="work">
+          <h2>Work Experience</h2>
+          <i class="fas fa-laptop-code"></i>
+
+          <div class="job">
+            <div class="col-narrow">
+              <h3>Job Title 1</h3>
+              <p class="uppercase">Company 1</p>
+              <p>Start Date - End Date</p>
+            </div>
+            <div class="col-wide">
+              <ul>
+                <li>Responsibility</li>
+                <li>Responsibility</li>
+                <li>Responsibility</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </aside>
-    <main>
-        <section class="sec1 bottom-border">
-            <h3>Biography</h3>
+
+        <div id="education">
+          <div>
+            <h2>Education</h2>
+
+            <h3>School 1, Graduated ****</h3>
+            <p class="designation">Degree/Designation</p>
+            <p>Additional Information</p>
+
+            <h3>School 2, Graduating ****</h3>
+            <p class="designation">Degree/Designation</p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit deleniti. Cupiditate quidem error quia nam quis sed velit voluptatibus. Laborum error aperiam doloremque iure nihil, sed beatae odio et.
+              E.g. Acheived Dean's List in my first year of the Software Design
+              Specialization.
             </p>
-        </section>
-        <section class="sec2 bottom-border">
-            <h3>WORK EXPERIENCE</h2>
-            <div class="left">
-                <p>
-                    <!-- <span class="indent-here"></span> -->
-                    <span class="bold-here">2014-2015</span>
-                </p>
-            </div>
-            <div class="right">
-                <p>
-                    <p><span class="bold-here">JOB/POSITION</span></p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quibusdam velit facilis, hic sit perferendis molestias est neque praesentium odit? Sunt beatae quia cumque laboriosam eligendi tempora eos voluptate blanditiis.
-                </p>
-            </div>
-            <div class="left">
-                <p>
-                    <span class="bold-here">2015-2018</span>
-                </p>
-            </div>
-            <div class="right">
-                <p>
-                    <p><span class="bold-here">JOB/POSITION</span></p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum vero placeat, nobis error esse similique libero velit eius hic eos sint mollitia nisi ipsa harum sunt. Officia, quas atque.
-                </p>
-            </div>
-        </section>
-        <section class="sec3 bottom-border">
-            <h2>EDUCATION</h2>
-            <div class="left">
-                <p>
-                    <span class="bold-here">2011-2018</span>
-                </p>
-            </div>
-            <div class="right">
-                <p>
-                    <span class="bold-here">Kingston College</span>
-                </p>
-            </div>
-            <div class="left">
-                <p>
-                    <span class="bold-here">2018-2020</span>
-                </p>
-            </div>
-            <div class="right">
-                <p>
-                    <p><span class="bold-here">BSc Software Engineering</span>
-                    </p>
-                    <span class="italics-here">The University of the West Indies, Mona</span>
-                </p>
-            </div>
-            
-        </section>
-        <section class="sec4">
-            <h2>SKILLS/ EXPERTISE</h2>
-            <p>
-                <ul>
-                    <li class="list-elements">HTML</li>
-                    <li class="list-elements">CSS</li>
-                    <li class="list-elements">JavaScript</li>
-                    <li class="list-elements">PHP</li>
-                </ul>
-            </p>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <div id="up-button">
+      <a id="toTop" href="#about" title="Jump to Top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <footer>
+      <div class="left">
+        <div class="top">
+          <h2>Let's Keep in Touch!</h2>
+        </div>
+        <div class="base">
+          <p>&copy; Copyright 2020 | Shemar Jones</p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-links mail">
+          <i class="far fa-envelope"></i>
+          <a href="mailto:jones.shemar.sj@gmail.com@gmail.com"
+            >jones.shemar.sj@gmail.com</a
+          >
+        </div>
+        <div class="contact-links linkedin">
+          <i class="fab fa-linkedin"></i>
+          <a href="linkedin.com/in/shemar-j" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-links facebook">
+          <i class="fab fa-facebook-square"></i>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
+        <div class="contact-links github">
+          <i class="fab fa-github-square"></i>
+          <a href="github.com/S-TJones" target="_blank">Github</a>
+        </div>
+        <div class="contact-links phone">
+          <i class="fas fa-mobile-alt"></i>
+          <a href="tel:+1(876) 793-9957">(876) 793-9957</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
