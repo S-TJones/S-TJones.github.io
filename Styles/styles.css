@@ -23,7 +23,7 @@ header {
   background-color: blue;
   height: fit-content;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   top: 0px;
   text-align: center;
   display: flex;
@@ -70,6 +70,14 @@ header {
 }
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-block {
+  border-top: 10px solid #000;
 }
 
 #up-button {
@@ -111,12 +119,13 @@ footer {
   color: #fff;
   height: fit-content;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .left {
@@ -126,8 +135,12 @@ footer {
   /* border-right: 2px dashed rgb(70, 70, 236); */
 }
 
-.top {
-  padding: 10px 0px;
+.top,
+.base {
+  padding: 5px 0px;
+  border-top: 0.5px solid rgb(180, 180, 180);
+  border-bottom: 0.5px solid rgb(180, 180, 180);
+  width: fit-content;
 }
 
 .contact-info {
@@ -185,6 +198,6 @@ footer {
 
 @media (max-width: 600px) {
   .main {
-    width: 400px;
+    width: 100%;
   }
 }
