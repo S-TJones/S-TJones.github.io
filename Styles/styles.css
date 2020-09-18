@@ -78,6 +78,9 @@ main {
 
 .content-block {
   border-top: 10px solid #000;
+  height: 500px;
+  width: auto;
+  padding: 10px 0px;
 }
 
 #up-button {
