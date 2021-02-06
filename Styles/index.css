@@ -12,3 +12,157 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(20, 17, 17);
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* The Main */
+main {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: auto 20px;
+  background-color: rgb(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+/* The Top */
+.above {
+  height: 45vh;
+  width: 100%;
+  padding: 20px;
+}
+
+/* The Base */
+.below {
+  height: 45vh;
+  width: 100%;
+  padding: 20px;
+  margin-top: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right";
+  column-gap: 20px;
+}
+
+/* The Dropdowns */
+.dropdown {
+  height: fit-content;
+}
+
+.drop-prompt {
+  display: inline-block;
+  width: 100%;
+}
+
+.drop-content {
+}
+
+.hide {
+  display: none;
+}
+
+/* The Left */
+#left {
+  max-width: 100%;
+  grid-area: left;
+  /* float: left; */
+  display: flex;
+  flex-direction: column;
+}
+
+#left > .dropdown {
+  background-color: aquamarine;
+}
+
+.button {
+}
+
+/* The Right */
+#right {
+  max-width: 100%;
+  grid-area: right;
+  /* float: right; */
+  display: flex;
+  flex-direction: column;
+}
+
+#right > .dropdown {
+  background-color: pink;
+}
+
+/* Other Styles */
+.drop-prompt > p {
+  padding: 10px 0px 10px 10px;
+  text-align: center;
+  line-height: 32px;
+  word-spacing: 3px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-prompt span {
+  font-weight: bold;
+  padding: 0px 3px 0px 10px;
+}
+
+/* The Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.arrows-up-down {
+  padding-left: 20px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.page-link {
+  padding: 20px;
+  width: 160px;
+  text-align: center;
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  background-color: #0000ff;
+
+  transition: all 0.5s ease-in;
+  border: solid 1px #000;
+  border-radius: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.page-link:hover {
+  width: 200px;
+  background-color: #4a4aff;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-link:hover .space {
+  margin: 0px 10px;
+}
+
+.page-link:hover .fas.fa-angle-double-left,
+.page-link:hover .fas.fa-angle-double-right {
+  display: none;
+}
+/* .page-link:hover:after {
+  content: " View";
+} */

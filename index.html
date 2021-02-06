@@ -7,11 +7,13 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./Styles/index.css">
+  <script src="./Scripts/index.js"></script>
 
   <title>S~Jones</title>
 </head>
 <body>
   <main>
+
     <div class="above">
       <p class="intro">Hello World,<br>
         Welcome to Shemar Jones' Landing-Page.
@@ -25,51 +27,58 @@
     </div>
 
     <div class="below">
-      <div class="left-dropdown">
-        <div class="drop-prompt">
-          <p>
-            What is <span>Website View</span>?
-            <i class="fas fa-angle-down"></i>
-            <i class="fas fa-angle-up"></i>
-          </p>
+      
+      <div id="left">
+        <div class="dropdown">
+          <div class="drop-prompt">
+            <p>
+              What is <span> Website View </span>?
+              <a href="#" class="arrows-up-down"><i class="fas fa-angle-down"></i></a>
+              <a href="#" class="arrows-up-down"><i class="fas fa-angle-up hide"></i></a>
+            </p>
+          </div>
+          <div class="drop-content hide">
+            <p>
+              This is a typical Dynamic Web-Portfolio. It's made with my knowledge of HTML, CSS, Javascript and More. <br>
+              If you're here just to see my portfolio in a web format, then this is the option for you.
+            </p>
+          </div>
         </div>
-        <div class="drop-content">
-          <p>
-            This is a typical Dynamic Web-Portfolio. It's made with my knowledge of HTML, CSS, Javascript and More. <br>
-            If you're here just to see my portfolio in a web format, then this is the option for you.
-          </p>
-        </div>
-      </div>
-      <div class="left">
-        <a href="/Website/landing.html" class="website-link">
-          <i class="fas fa-angle-left"></i>
+
+        <a href="/Website/landing.html" class="page-link">
+          <i class="fas fa-angle-left hide"></i>
           <i class="fas fa-angle-double-left"></i>
-          Website
+          <span class="space"></span>
+          <span class="anchor-text">Website</span>
         </a>
       </div>
-      <div class="right">
-        <div class="left-dropdown">
+
+      <div id="right">
+        <div class="dropdown">
           <div class="drop-prompt">
             <p>
               What is <span>Terminal View</span>?
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
+              <a href="#" class="arrows-up-down"><i class="fas fa-angle-down"></i></a>
+              <a href="#" class="arrows-up-down"><i class="fas fa-angle-up hide"></i></a>
             </p>
           </div>
-          <div class="drop-content">
+          <div class="drop-content hide">
             <p>
               This is a typical Dynamic Web-Portfolio with a dash of personality. I'm a huge fan of Visual Studio Code and I wanted to show my love for it. <br>
               If you want to see how well I can apply my knowledge of Web Development, then this is the option for you.
             </p>
           </div>
         </div>
-        <a href="/Terminal/landing.html" class="terminal-link">
+        <a href="/Terminal/landing.html" class="page-link">
+          <span class="anchor-text">Terminal</span>
+          <span class="space"></span>
           <i class="fas fa-angle-double-right"></i>
-          <i class="fas fa-angle-right"></i>
-          Terminal
+          <i class="fas fa-angle-right hide"></i>
         </a>
       </div>
+
     </div>
+
   </main>
 </body>
 </html>
