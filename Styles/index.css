@@ -85,9 +85,6 @@ main {
   background-color: aquamarine;
 }
 
-.button {
-}
-
 /* The Right */
 #right {
   max-width: 100%;
@@ -131,7 +128,7 @@ a {
   font-weight: bold;
 }
 
-.page-link {
+.button {
   padding: 20px;
   width: 160px;
   text-align: center;
@@ -144,23 +141,28 @@ a {
   border: solid 1px #000;
   border-radius: 20px;
   margin: 20px auto;
+
   overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 
-.page-link:hover {
-  width: 200px;
+.button:hover {
+  width: 210px;
   background-color: #4a4aff;
 
   display: flex;
   justify-content: space-between;
 }
 
-.page-link:hover .space {
+.button:hover .space {
   margin: 0px 10px;
 }
 
-.page-link:hover .fas.fa-angle-double-left,
-.page-link:hover .fas.fa-angle-double-right {
+.button:hover .fas.fa-angle-double-left,
+.button:hover .fas.fa-angle-double-right {
   display: none;
 }
 /* .page-link:hover:after {
